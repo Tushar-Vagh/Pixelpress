@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #f4f8fb;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .navbar {
+        background-color: #343a40;
+        color: #fff;
+        padding: 15px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .navbar-container a {
+        text-decoration: none;
+      }
+
+      .nav-links li:last-child {
+        font-size: 20px;
+        font-weight: bolder;
+        color: #f3c135;
+      }
+
+      .logo img {
+        height: 70px;
+        width: auto;
+        cursor: pointer;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+
+      .nav-links li a {
+        text-decoration: none;
+        color: #cfcfcf;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        font-weight: 500;
+      }
+
+      .nav-links li a:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      .logout-btn {
+        background-color: #dc3545;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .logout-btn:hover {
+        background-color: #c82333;
+      }
+
+      @media (max-width: 768px) {
+        .logo img {
+          height: 60px;
+        }
+
+        .navbar-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+
+      .header {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        font-size: 1.2rem;
+      }
+
+      .main .container {
+        max-width: 1100px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .main h2 {
+        font-size: 1.8rem;
+        color: #6a11cb;
+        margin-bottom: 15px;
+      }
+
+      .main p,
+      .main ul {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+
+      .main ul {
+        list-style: disc inside;
+        padding-left: 20px;
+      }
+
+      .main ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 10px 20px;
+        background: #343a40;
+        color: white;
+        font-size: 0.9rem;
+      }
+
+      .footer p {
+        margin: 0;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="logo">
+          <img src="images/logo1.png" alt="Logo" />
+          <img src="images/logo2.png" alt="Logo" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li>Welcome User,</li>
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <h1>About PixelPress</h1>
+        <p>Your go-to tool for compressing and resizing images efficiently!</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="mission">
+          <h2>Our Mission</h2>
+          <p>
+            At PixelPress, we aim to make image compression and resizing
+            seamless and accessible for everyone. Whether you're a professional
+            or a casual user, our tool helps you optimize images without
+            sacrificing quality.
+          </p>
+        </section>
+
+        <section class="features">
+          <h2>What We Offer</h2>
+          <ul>
+            <li>High-quality image compression without loss of detail.</li>
+            <li>Customizable resolution settings to meet your needs.</li>
+            <li>
+              User-friendly interface suitable for beginners and experts alike.
+            </li>
+            <li>Fast and efficient performance for all image types.</li>
+          </ul>
+        </section>
+
+        <section class="team">
+          <h2>Meet the Team</h2>
+          <p>
+            PixelPress was created by Tushar Vagh, a passionate developer
+            dedicated to providing cutting-edge solutions for image
+            optimization. With a commitment to excellence, Tushar ensures the
+            tool meets the needs of both professionals and casual users.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 PixelPress by Tushar Vagh. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
